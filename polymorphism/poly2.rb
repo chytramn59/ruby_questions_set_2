@@ -20,75 +20,39 @@
   # 4
   # I am car, I have 4
   #  wheels
-# class Vehilce
 
-#    def initialize(x)
-#     puts "enter the number of wheels"
-#    end
-#   def part(wheel)
-#      @wheel = wheel
-#   end
 
-# end
-# class Bike < Vehilce
 
-#    def body_wheel(wheel)
-#     @wheel = wheel
-#   #puts  I am bike, I have 2 wheels
-#    end
-
-#   end
-#   class Car < Vehilce
-
-#      def body_wheel(wheel)
-#     @wheel = wheel
-#    # puts I am car, I have 4 wheels
-#    end
-
-#   end
-
-#   Bike = Bike.new("2")
-#   puts Bike.part
-# Car = Car.new("4")
-# puts Car.part
- 
-
-class Vehilce 
-
-  def meets
-    puts "enter the number"
+class Vehilce
+    def initialize
+    end
   end
 
-  def greet(wheel)
-    log.greet
+  class Bike < Vehilce
+    def bike
+      p "Enter number of wheels"
+      a = Integer(gets)
+      if a == 2
+        puts "I am bike, I have 2 wheels"
+      else
+        puts "sorry"
+      end
+    end
+  end
+  
+  class Car < Vehilce
+    def car
+      p "Enter number of wheels"
+      b = Integer(gets)
+      if b == 4
+        puts "I am car, I have 4 wheels"
+      else
+        puts "sorry"
+      end
+    end
   end
 
-  # def treat(person)
-  #   person.treat
-  # end
-
-end
-
-class Bike
-
-  def greet(wheel)
-  @wheel = wheel
-  end
-end
-
-# class Car
-
-#   def greet
-#     puts "Hi, How are you?"
-#   end
-
-#   def treat
-#     puts "Would you like to have American food?"
-#   end
-
-# end
-
-Vehilce = Vehilce.new
-log = Bike.new("2")
-Vehilce.greet(wheel)
-
+  bike=Bike.new
+  bike.bike
+  car=Car.new
+  car.car
