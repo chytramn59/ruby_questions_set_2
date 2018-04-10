@@ -35,18 +35,22 @@ class Country
 	def initialize
 		puts "This is the Country code."
 	end
-
-	def countryCode 
-	 # the country code is 00
+	def countryCode(num) 
+	 	puts @num = num
 	end
+end
+class Sub < Country
 end
 
 class City
 	def initialize
 		puts "This is the City code."
 	end
-
-	# define cityCode  --> city code is 212
+def citycode(cod)
+	puts @cod = cod
+end
+end
+	class Next < City
 end
 
 
@@ -56,21 +60,37 @@ class Number < Country
 	end
 
 	# define phoneNumber --> phone number is 2414211
-
+ def phoneNumber(number)
+ 	puts @number = number
+ end
 end
 
-class Number < City
+class Num < City
 	def initialize
-		puts "This is the landline number."
+		puts "This is the dialNumber number."
 	end
 
 	# define phoneNumber --> phone number is 2414211
+	def phoneNumber(numb)
+		puts @numb = numb
+		
+	end
 
 	def dialNumber
 		puts countryCode cityCode phoneNumber 
 	end
 end
 
+m = Sub.new
+m.countryCode("00")
 
+  x = Next.new
+  x.citycode("212")
 
-# instantiate a object and check for all code and final number
+  y = Number.new
+  y.phoneNumber("2414211")
+
+  p = Num.new
+  p.phoneNumber("002122414211")
+
+  
