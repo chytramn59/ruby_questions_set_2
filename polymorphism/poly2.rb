@@ -26,29 +26,34 @@
 class Vehilce
     def initialize
     end
+    def adding(a)
+      puts a
+    end
   end
 
   class Bike < Vehilce
     def bike
-      p "Enter number of wheels"
-      a = Integer(gets)
-      if a == 2
-        puts "I am bike, I have 2 wheels"
-      else
-        puts "sorry"
-      end
+      # p "Enter number of wheels"
+      # a = Integer(gets)
+      # if a == 2
+      #   puts "I am bike, I have 2 wheels"
+      # else
+      #   puts "sorry"
+      # end
+      adding("bike")
     end
   end
   
   class Car < Vehilce
     def car
-      p "Enter number of wheels"
-      b = Integer(gets)
-      if b == 4
-        puts "I am car, I have 4 wheels"
-      else
-        puts "sorry"
-      end
+      # p "Enter number of wheels"
+      # b = Integer(gets)
+      # if b == 4
+      #   puts "I am car, I have 4 wheels"
+      # else
+      #   puts "sorry"
+      # end
+      adding("car")
     end
   end
 

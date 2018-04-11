@@ -31,3 +31,6 @@ puts "Enter the content"
  file=gets.to_s 
  File.delete(file) 
  puts "file has been deleted"
+
+
+ 

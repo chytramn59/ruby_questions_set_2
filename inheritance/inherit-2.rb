@@ -39,8 +39,6 @@ class Country
 	 	puts @num = num
 	end
 end
-class Sub < Country
-end
 
 class City
 	def initialize
@@ -50,9 +48,7 @@ def citycode(cod)
 	puts @cod = cod
 end
 end
-	class Next < City
-end
-
+	
 
 class Number < Country
 	def initialize
