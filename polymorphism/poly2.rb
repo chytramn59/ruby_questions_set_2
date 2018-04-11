@@ -60,4 +60,4 @@ class Vehilce
   bike=Bike.new
   bike.bike
   car=Car.new
-  car.car
+  car.car #ji
